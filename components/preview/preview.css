@@ -1,0 +1,9 @@
+.preview {
+  display: flex;
+  gap: 30px;
+  /* margin: 0 -15px; */
+}
+
+.preview__card {
+  /* margin: 15px; */
+}
