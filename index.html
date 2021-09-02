@@ -1,10 +1,46 @@
 <!DOCTYPE html>
 <!-- Главная страница -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="./assets/css/main.css">
-    </head>
-    <body>
+  <head>
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="stylesheet" href="./components/footer/footer.css" />
+    <link rel="stylesheet" href="./components/header/header.css" />
+    <link rel="stylesheet" href="./components/card/card.css" />
+    <link rel="stylesheet" href="./components/preview/preview.css" />
+    <style>
+      .page {
+        display: flex;
+        flex-direction: column;
+      }
 
-    </body>
+      .page__box {
+        max-width: 1110px;
+        margin: 0 auto;
+      }
+
+      main {
+        flex-grow: 1;
+        background: gray;
+      }
+    </style>
+  </head>
+  <body class="page">
+    <header class="header">
+      <h1>Title</h1>
+    </header>
+    <main>
+      <div class="preview page__box">
+        <div class="card preview__card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+        <div class="card"></div>
+      </div>
+    </main>
+    <footer class="footer">
+      <h2>About</h2>
+    </footer>
+  </body>
 </html>
